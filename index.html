@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/896048e4d4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Social Security And Awareness</title>
+
+</head>
+
+<body id="home">
+    <header class="hero">
+        <div id="navbar" class="navbar top">
+            <h2 class="logo">
+                <span class="text-primary"><i class="fas fa-user-shield"></i></span>Covid-19
+            </h2>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#symptoms">Symptoms</a></li>
+                    <li><a href="#prevention">Prevention</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Covid-19</h1>
+            <p>A transmissible disease caused by severe acute respiratory syndrome Coronavirus 2 </p>
+        </div>
+    </header>
+    <main>
+        <!-- About: Icons -->
+        <section id="about" class="icons bg-light">
+            <div class="flex-items">
+                <div>
+                    <i class="fas fa-handshake fa-2x"></i>
+                    <div>
+                        <h3>Communicable Disease</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Tempore, iusto!
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <i class="fas fa-head-side-cough fa-2x"></i>
+                    <div>
+                        <h3>Respiratory Illness</h3>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Tempore, iusto!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="home-info" class="bg-dark">
+            <div class="info-img"></div>
+            <div class="info-content">
+                <h2><span class="text-primary">About</span> The Disease</h2>
+                <p>
+                    Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered
+                    coronavirus. Since the covid-19 outbreak,
+                    “the instability and fear that the pandemic
+                    engenders is exacerbating existing human rights concerns, such as discrimination
+                    against common people. A common pattern in discriminatory acts occurring during the
+                    pandemic stating that the outbreak of communicable diseases might cause fear anxiety.
+                    It is a disease that's new and for which there are still many unknowns. We are often afraid
+                    of the unknown and it is easy to associate that fear with 'others'. To measure incidents
+                    of discrimination, respondents were asked if "people thinking they might have the
+                    coronavirus" acted as if they were afraid of them, threatened or harassed them, treated
+                    them with less courtesy and respect, or gave them poorer service at every place.
+                </p>
+
+                <a href="about.html" class="btn btn-light">
+                    <i class="fas fa-chevron"></i>
+                    Read More
+                </a>
+            </div>
+        </section>
+
+        <!-- Symptoms -->
+        <section id="symptoms" class="icons bg-light symptoms">
+            <header class="section-header">
+                <h4>What are the symptoms of this disease</h4>
+                <h2>Symptoms</h2>
+                <div class="flex-items">
+                    <div>
+                        <i class="fas fa-thermometer-full fa-2x"></i>
+                        <div>
+                            <h3>High Fever</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Tempore, iusto!
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fas fa-head-side-cough fa-2x"></i>
+                        <div>
+                            <h3>Coughing</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Tempore, iusto!
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fas fa-head-side-mask fa-2x"></i>
+                        <div>
+                            <h3>Breathing Problem</h3>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Tempore, iusto!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+        <!-- Prevention -->
+        <section id="prevention" class="bg-dark prevention flex-columns">
+            <div class="row">
+                <div class="column">
+                    <div class="column-2">
+                        <h2>Prevention</h2>
+                        <h4>How to prevent from this disease</h4>
+                        <p>To prevent the spread of COVID-19:</p>
+                        <p> a) Clean your hands often. Use soap and water, or an alcohol-based hand rub.</p>
+                        <p> b) Maintain a safe distance from anyone who is coughing or sneezing.</p>
+                        <p> c) Wear a mask when physical distancing is not possible.</p>
+                        <p> d) Don’t touch your eyes, nose or mouth.</p>
+                        <p> e) Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</p>
+                        <p> f) Stay home if you feel unwell.</p>
+                        <p> g) If you have a fever, cough and difficulty breathing, seek medical attention.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column-1">
+                        <img src="project/prevent.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <a href="prevention.html" class="btn btn-light">
+                <i class="fas fa-chevron"></i>
+                Read More
+            </a>
+        </section>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+
+        // Smooth Scrolling
+        $('#navbar a, .btn').on('click', function (e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top - 100,
+                    },
+                    800
+                );
+            }
+        });
+    </script>
+
+</body>
+
+</html>
